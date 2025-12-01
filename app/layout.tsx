@@ -11,7 +11,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa6";
 
-import Header from "./components/Header"; // зөв дуудлага
+import Header from "./components/Header";
 
 import "./globals.css";
 
@@ -36,10 +36,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* HEADER */}
         <Header />
 
-        {/* OFFSET: header-ийн өндөр */}
+        {/* offset */}
         <div className="h-20"></div>
 
-        {/* MAIN CONTENT */}
         <main>{children}</main>
 
         {/* FOOTER */}
@@ -54,8 +53,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     key={label}
                     href={href}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
                     className="grid h-7 w-7 place-items-center rounded-full bg-black text-white hover:bg-[#0b4f7d]"
                   >
                     <Icon size={14} />
@@ -63,7 +60,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 ))}
               </div>
 
-              {/* MENU */}
               <div className="text-center text-[12px] md:text-left">
                 <h4 className="mb-1 font-semibold">ЦЭС</h4>
                 <ul className="space-y-0.5">
@@ -73,7 +69,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </ul>
               </div>
 
-              {/* LOCATION */}
               <div className="text-center text-[12px] md:text-left">
                 <h4 className="mb-1 font-semibold">БАЙРШИЛ</h4>
                 <ul className="space-y-0.5">
@@ -82,7 +77,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </ul>
               </div>
 
-              {/* CONTACT */}
               <div className="text-center text-[12px] md:text-left">
                 <h4 className="mb-1 font-semibold">ХОЛБОО БАРИХ</h4>
                 <ul className="space-y-0.5">
