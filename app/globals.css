@@ -1,0 +1,9 @@
+/* app/globals.css */
+
+@import "tailwindcss";
+
+/* Хэрвээ өөр глобал стил нэммээр байвал доор нь бичнэ */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
