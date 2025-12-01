@@ -2,5 +2,5 @@
 module.exports = {
   siteUrl: "https://mcsc.mn",
   generateRobotsTxt: true,
-  sitemapSize: 5000,
+  sitemapSize: 5000
 };
